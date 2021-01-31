@@ -8,7 +8,7 @@ I use it to stream real time audio (1-2 sec) from one PC to another PC via a jum
 First, on the receiver side:
 `ffplay tcp://<server-ip>:9991`
 
-Afterwards, on the transceiver side:
+Afterwards, on the transmitter side:
 `ffmpeg -f alsa -ac 2 -i default -c:a aac -b:a 128k -f matroska tcp://<server-ip>:9990`
 
 The reason the program is set up this way, is that there is an endless loop script running on the transmittig PC trying to send audio.
