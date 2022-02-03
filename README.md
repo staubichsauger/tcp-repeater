@@ -1,6 +1,6 @@
 # tcp repeater
 Simple program, which relays an incoming tcp connection on port 9990 to an outgoing tcp connection on port 9991.
-It first waits for the receiver to connect on port 9991 befor it lets the tranceiver connect to port 9990.
+It first waits for the receiver to connect on port 9991 before it lets the transmitter connect to port 9990.
 
 ## Use case real time audio relay with ffmpeg
 I use it to stream real time audio (1-2 sec) from one PC to another PC via a jump server using ffmpeg.
